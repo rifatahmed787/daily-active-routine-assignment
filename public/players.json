@@ -3,7 +3,7 @@
         "img": "https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg",
         "name": "Football",
         "time": "90min",
-        "details": "Football, also called association football or soccer, is a game involving two teams of 11 players who try to maneuver the ball into the other team's goal without using their hands or arms."
+        "details": "Football, also called association football or soccer, is a game involving two teams of 11 players."
     },
     {
         "img": "https://w0.peakpx.com/wallpaper/692/974/HD-wallpaper-shakib-wg-bangladesh-cricket-cricketer-player-shakib-al-hasan-sports.jpg",
@@ -21,18 +21,18 @@
         "img": "https://cdn.xxl.thumbs.canstockphoto.com/one-caucasian-young-teenager-silhouette-boy-or-girl-studying-reading-books-in-studio-cut-out-stock-photograph_csp9743079.jpg",
         "name": "Study",
         "time": "120min",
-        "details": "Study skills are the skills you need to enable you to study and learn efficiently – they are an important set of transferable life skills."
+        "details": "Study skills are the skills you need to enable you to study and learn efficiently."
     },
     {
         "img": "https://img.freepik.com/premium-vector/programming-code-icon-made-with-binary-code-coding-hacker-matrix-background-with-digits-1-0_127544-1141.jpg?w=2000",
         "name": "Coding",
         "time": "180min",
-        "details": " Coding skills are used every day by many, many people who aren't full-time software engineers."
+        "details": " I love to code because it is usable art. Just like architecture."
     },
     {
         "img": "https://previews.123rf.com/images/alekss/alekss2011/alekss201100101/158220510-soccer-ball-on-green-stadium-arena-in-night-illuminated-bright-spotlights.jpg",
         "name": "Gaming",
         "time": "30min",
-        "details": "Key components of games are goals, rules, challenge, and interaction. Games generally involve mental or physical stimulation, and often both."
+        "details": " Games generally involve mental or physical stimulation, and often both."
     }
 ]
