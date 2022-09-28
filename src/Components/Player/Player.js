@@ -4,7 +4,7 @@ const Player = (props) => {
     console.log(props)
     const { name, img, details, time } = props.player;
     return (
-        <div className='my-16'>
+        <div className='mb-6'>
             <div className="card w-11/12 bg-base-100 shadow-xl h-full">
                 <figure className="px-10 pt-10">
                     <img src={img} alt="Shoes" className="rounded-xl w-full h-52" />
