@@ -23,8 +23,9 @@ const Players = () => {
                     }
                 </div>
             </div>
-            <div>
-                <h1>hello</h1>
+            <div className='shadow-xl bg-stone-100'>
+                <h1 className='font-bold text-2xl text-center mt-10'>Md Rifat</h1>
+                <p className='font-bold text-base text-center mt-2'>Dhaka, Bangladesh</p>
             </div>
         </div>
     );
