@@ -26,6 +26,17 @@ const Players = () => {
             <div className='shadow-xl bg-stone-100'>
                 <h1 className='font-bold text-2xl text-center mt-10'>Md Rifat</h1>
                 <p className='font-bold text-base text-center mt-2'>Dhaka, Bangladesh</p>
+                <div className="overflow-x-auto">
+                    <table className="table w-full mt-4">
+                        <tbody>
+                            <tr className="active">
+                                <td><span className='font-bold text-2xl'>75</span>kg <br />Weight </td>
+                                <td><span className='font-bold text-2xl'>5.6</span><br />Height</td>
+                                <td><span className='font-bold text-2xl'>24</span>yrs <br />Age</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     );
