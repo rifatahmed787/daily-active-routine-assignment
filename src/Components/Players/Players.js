@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons'
 import Cart from '../Cart/Cart';
 import Player from '../Player/Player';
 import './Players.css'
@@ -21,13 +23,16 @@ const Players = () => {
     }
 
     const AddBreakTime = (e) => {
-        console.log(e.target.innerText);
+        setTime(e.target.innerText);
     }
 
     return (
         <div className='players'>
             <div>
-                <h1 className='text-3xl font-bold text-blue-600/100 mt-20 ml-10'>DAILY-ACTIVE-ROUTINE</h1>
+                <div className='flex text-center'>
+                    <FontAwesomeIcon className='text-3xl font-bold text-blue-500 mt-20 ml-10' icon={faDumbbell}></FontAwesomeIcon>
+                    <h1 className='text-3xl font-bold text-blue-600/100 mt-20 ml-6'>DAILY-ACTIVE-ROUTINE</h1>
+                </div>
                 <h3 className='mt-8 font-medium text-xl ml-10'>Select today's activities</h3>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                     {
@@ -70,12 +75,14 @@ const Players = () => {
                                 <td>
                                     <button onClick={AddBreakTime} className="btn btn-circle btn-outline lowercase">30min</button>
                                 </td>
-
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <Cart cart={cart}></Cart>
+                <Cart cart={cart}
+                    time={time}
+                ></Cart>
+
             </div>
         </div>
     );
