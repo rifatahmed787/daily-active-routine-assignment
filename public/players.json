@@ -1,35 +1,46 @@
 [
     {
+        "id": "1",
         "img": "https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg",
         "name": "Football",
         "time": "90min",
-        "details": "Football, also called association football or soccer, is a game involving two teams of 11 players."
+        "details": "Football, also called association football or soccer, is a game involving two teams of 11 players.",
+        "break": "10min"
     },
     {
+        "id": "2",
         "img": "https://w0.peakpx.com/wallpaper/692/974/HD-wallpaper-shakib-wg-bangladesh-cricket-cricketer-player-shakib-al-hasan-sports.jpg",
         "name": "Cricket",
         "time": "60min",
-        "details": "Cricket is a bat-and-ball game played between two teams of eleven players on a field"
+        "details": "Cricket is a bat-and-ball game played between two teams of eleven players on a field",
+        "break": "15min"
     },
     {
+        "id": "3",
         "img": "https://image.shutterstock.com/image-photo/handsome-man-big-muscles-posing-260nw-554051812.jpg",
         "name": "Dumble",
         "time": "30min",
-        "details": "Exercise involves engaging in physical activity and increasing the heart rate beyond resting levels."
+        "details": "Exercise involves engaging in physical activity and increasing the heart rate beyond resting levels.",
+        "break": "20min"
     },
     {
+        "id": "4",
         "img": "https://cdn.xxl.thumbs.canstockphoto.com/one-caucasian-young-teenager-silhouette-boy-or-girl-studying-reading-books-in-studio-cut-out-stock-photograph_csp9743079.jpg",
         "name": "Study",
         "time": "120min",
-        "details": "Study skills are the skills you need to enable you to study and learn efficiently."
+        "details": "Study skills are the skills you need to enable you to study and learn efficiently.",
+        "break": "30min"
     },
     {
+        "id": "5",
         "img": "https://img.freepik.com/premium-vector/programming-code-icon-made-with-binary-code-coding-hacker-matrix-background-with-digits-1-0_127544-1141.jpg?w=2000",
         "name": "Coding",
         "time": "180min",
-        "details": " I love to code because it is usable art. Just like architecture."
+        "details": " I love to code because it is usable art. Just like architecture.",
+        "break": "40"
     },
     {
+        "id": "6",
         "img": "https://previews.123rf.com/images/alekss/alekss2011/alekss201100101/158220510-soccer-ball-on-green-stadium-arena-in-night-illuminated-bright-spotlights.jpg",
         "name": "Gaming",
         "time": "30min",

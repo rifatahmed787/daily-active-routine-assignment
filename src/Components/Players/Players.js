@@ -6,6 +6,7 @@ import './Players.css'
 const Players = () => {
     const [players, setPlayers] = useState([]);
     const [cart, setCart] = useState([]);
+    const [time, setTime] = useState([]);
 
     useEffect(() => {
         fetch("players.json")
@@ -16,7 +17,11 @@ const Players = () => {
     const AddToCart = (player) => {
         const newCart = [...cart, player];
         setCart(newCart);
-        // addToDb(product.id)
+
+    }
+
+    const AddBreakTime = (e) => {
+        console.log(e.target.innerText);
     }
 
     return (
@@ -28,6 +33,7 @@ const Players = () => {
                     {
                         players.map(player => <Player
                             player={player}
+                            key={player.id}
                             AddToCart={AddToCart}
                         ></Player>)
                     }
@@ -53,16 +59,16 @@ const Players = () => {
                         <tbody>
                             <tr className="active">
                                 <td>
-                                    <button className="btn btn-circle  btn-outline">10 <span className='lowercase'>min</span></button>
+                                    <button onClick={AddBreakTime} className="btn btn-circle  btn-outline lowercase">10min</button>
                                 </td>
                                 <td>
-                                    <button className="btn btn-circle btn-outline">15 <span className='lowercase'>min</span></button>
+                                    <button onClick={AddBreakTime} className="btn btn-circle btn-outline lowercase">15min</button>
                                 </td>
                                 <td>
-                                    <button className="btn btn-circle btn-outline">20 <span className='lowercase'>min</span></button>
+                                    <button onClick={AddBreakTime} className="btn btn-circle btn-outline lowercase">20min</button>
                                 </td>
                                 <td>
-                                    <button className="btn btn-circle btn-outline">30 <span className='lowercase'>min</span></button>
+                                    <button onClick={AddBreakTime} className="btn btn-circle btn-outline lowercase">30min</button>
                                 </td>
 
                             </tr>
