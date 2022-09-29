@@ -14,8 +14,8 @@ const Players = () => {
         <div className='players'>
             <div>
                 <h1 className='text-3xl font-bold text-blue-600/100 mt-20 ml-10'>DAILY-ACTIVE-ROUTINE</h1>
-                <h3 className='mt-8 font-medium text-xl ml-10'>Select today's activity</h3>
-                <div className='grid grid-cols-3'>
+                <h3 className='mt-8 font-medium text-xl ml-10'>Select today's activities</h3>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                     {
                         players.map(player => <Player
                             player={player}
