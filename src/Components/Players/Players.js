@@ -10,6 +10,7 @@ const Players = () => {
     const [cart, setCart] = useState([]);
     const [time, setTime] = useState([]);
 
+
     useEffect(() => {
         fetch("players.json")
             .then(res => res.json())
@@ -24,6 +25,16 @@ const Players = () => {
 
     const AddBreakTime = (e) => {
         setTime(e.target.innerText);
+
+        const preTime = localStorage.getItem('break-time');
+        const oldTime = JSON.parse(preTime);
+
+        if (oldTime) {
+            localStorage.setItem('break-time', JSON.stringify(time));
+        } else {
+            localStorage.setItem('break-time', JSON.stringify(time));
+        }
+
     }
 
     return (
