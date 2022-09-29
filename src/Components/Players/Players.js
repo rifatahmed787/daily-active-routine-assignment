@@ -1,15 +1,24 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Player from '../Player/Player';
 import './Players.css'
 
 const Players = () => {
     const [players, setPlayers] = useState([]);
+    const [cart, setCart] = useState([]);
 
     useEffect(() => {
         fetch("players.json")
             .then(res => res.json())
             .then(data => setPlayers(data));
     }, [])
+
+    const AddToCart = (player) => {
+        const newCart = [...cart, player];
+        setCart(newCart);
+        // addToDb(product.id)
+    }
+
     return (
         <div className='players'>
             <div>
@@ -19,6 +28,7 @@ const Players = () => {
                     {
                         players.map(player => <Player
                             player={player}
+                            AddToCart={AddToCart}
                         ></Player>)
                     }
                 </div>
@@ -59,6 +69,7 @@ const Players = () => {
                         </tbody>
                     </table>
                 </div>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );
